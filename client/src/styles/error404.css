@@ -1,0 +1,50 @@
+.background {
+    background-image: url('../images/dogs.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    padding-top: 80px;
+    margin: -40px;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+title{
+    text-align: center;
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #e69d00, 0 0 30px #e69d00,
+0 0 30px #e69d00, 0 0 40px #e69d00, 0 0 50px #e69d00;
+font-size: 3rem;}
+
+.subTitle{
+font-weight: bold;
+text-decoration: none;
+text-align: center;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e69d00, 0 0 10px #e69d00,
+0 0 10px #e69d00, 0 0 20px #e69d00, 0 0 30px #e69d00;
+font-size: 2rem;}
+
+.navlink{
+    text-decoration: none;
+    color: black;
+    width: 300px;
+}
+
+.boton{
+    width: 200px;
+    margin: 20px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: burlywood;
+    border-radius: 6px;
+    border: 2px solid #8d7248;
+  }
+  
+  .boton:hover{
+    color: #3c3d15bb;
+    background-color: #f5e2a4;}

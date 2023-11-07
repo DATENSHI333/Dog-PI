@@ -1,59 +1,18 @@
-.landing_page {
-    background-image: url('../images/LandingPage.jpg');
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: contain;
-    padding-top: 80px;
-    margin: -40px;
-    background-color: rgb(0, 0, 0);
-   
-}
+.title{
+text-align: center;
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #e69d00, 0 0 30px #e69d00,
+0 0 30px #e69d00, 0 0 40px #e69d00, 0 0 50px #e69d00;
+font-size: 3rem;}
 
-.title_landing{
-    width: 60rem;
-    margin-left: 35rem;
-    margin-top: 9rem;
-    padding-left: 3rem;
-    background: linear-gradient(50deg,orange, rgb(145, 49, 5));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.7rem;
-    
-    
-}
+.subTitle{
+text-decoration: none;
+text-align: center;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e69d00, 0 0 10px #e69d00,
+0 0 10px  #e69d00, 0 0 20px #e69d00, 0 0 30px #e69d00;
+font-size: 2rem;}
 
-.subtitle_landing {
-    
-    margin-top: 2.5rem;
-    margin-left: 55rem;
-    padding-left: 3rem;
-    width: 20rem;
-    justify-content: center;
-    text-align: center;
-    word-spacing: 0.1cm;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-
-
-}
-
-.button_landing {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 60px;
-    margin-left: 51rem;
-    margin-top: 1.8rem;
-    
-}
-
-.button_landing:hover {
-    outline-offset: 80px;
-    text-shadow: 5px 5px 5px white;
-    border: none;
+.navlink{
+text-decoration: none;
+color: black;
+width: 300px;
 }
