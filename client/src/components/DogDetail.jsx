@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link} from "react-router-dom";
 import { getDetail } from "../actions";
-import s from '../styles/detail.css';
+import s from '../styles/DogDetail.module.css';
 
 
 export default function Detail (props){
@@ -25,7 +25,7 @@ return (
         <div >
             <h1 className={s.title}>{myDog[0].name}</h1>
             <div className={s.contenedor}>
-                <img className={s.dogImage} src={myDog[0].img ? myDog[0].img : "https://www.anipedia.net/imagenes/nombres-de-perros-800x375.jpg"} alt=""/>
+                <img className={s.dogImage} src={myDog[0].img ? myDog[0].img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwG3fSxo_LjSOhpg5QIy5VZI-2T2Jczs5olU0Vgg8dNe3b8Sm5sQspY7og3HUW8zifY7A&usqp=CAU"} alt=""/>
             <div className={s.text}>
             <div className={s.tamaño}> 
                 <h2 >Tamaño: </h2>
@@ -43,6 +43,7 @@ return (
                 <p>{myDog[0].life_time_max}  Años</p>
             </div>
             <div className={s.vida}>
+            </div>
             <h2 >Temperamentos: </h2>
             <p>{!myDog[0].createInDb ? myDog[0].temperament : myDog[0].Temperaments.map(e=>e.name + " ")}</p>
         </div> </div>  </div>

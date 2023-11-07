@@ -12,7 +12,7 @@
    
 }
 
-title{
+.title{
     text-align: center;
 text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #e69d00, 0 0 30px #e69d00,
 0 0 30px #e69d00, 0 0 40px #e69d00, 0 0 50px #e69d00;
@@ -30,6 +30,7 @@ font-size: 2rem;}
     text-decoration: none;
     color: black;
     width: 300px;
+    cursor:url(''), auto;
 }
 
 .boton{

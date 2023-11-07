@@ -1,5 +1,5 @@
 import React from 'react';
-import s from '../styles/paginado.css'
+import s from '../styles/Paginado.module.css';
 
 
 export default function Paginado({dogsPerPage, allDogs, paginado}) {

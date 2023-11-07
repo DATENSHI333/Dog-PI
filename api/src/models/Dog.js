@@ -1,9 +1,9 @@
-const { DataTypes } = require('sequelize');
+const { DataTypes} = require("sequelize");
 // Exportamos una funcion que define el modelo
 // Luego le injectamos la conexion a sequelize.
 module.exports = (sequelize) => {
   // defino el modelo
-  sequelize.define('dog', {
+  sequelize.define("Dog", {
     id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
@@ -46,8 +46,12 @@ module.exports = (sequelize) => {
     img: {
       type:DataTypes.STRING,
       allowNull: false,
-      defaultValue: "https://www.anipedia.net/imagenes/caracteristicas-generales-de-los-perros.jpg"
+      defaultValue: "https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg"
      },
+    
 },
-);
+  {
+    timestamps:false,
+  }
+  );
 };

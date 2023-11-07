@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../images/logo.png";
-import Crear from "../images/CrearPerro.jpg";
+import huella from "../images/CrearPerro.jpg";
 import {
   getDogs,
   filterDogsByTemperaments,
@@ -12,7 +12,7 @@ import {
 } from "../actions";
 
 import s from "../styles/NavBar.module.css";
-import SearchBar from "./searchBar";
+import SearchBar from "./SearchBar";
 
 export default function NavBar() {
   const dispatch = useDispatch();
@@ -61,7 +61,7 @@ export default function NavBar() {
             </NavLink>
         <div className={s.t_f_s}>
 
-            <h1 className={s.title}>PERROS</h1>
+            <h1 className={s.title}>Perritos!</h1>
             <div className={s.filtros_search}>
             <div className={s.select_button}>
               <div className={s.filtros}>
@@ -108,7 +108,7 @@ export default function NavBar() {
             </div>
             </div>
             <Link className={s.newdog} to="/dogs">
-              <img className={s.imgNew} src={Crear} alt="img not found"></img>
+              <img className={s.imgNew} src={huella} alt="img not found"></img>
             </Link>
           </li>
         </ul>

@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 //importo las actions que me interesa usar en este componente
 import { getDogs, orderByName, orderByWeight, getTemperaments} from "../actions";
 //importo los componentes que voy a usar
-import DogCard from "./dogCard";
+import DogCard from "./DogCard";
 import Paginado from "./Paginado";
 import s from "../styles/Home.module.css"
 import NavBar from "./NavBar";
@@ -76,7 +76,7 @@ export default function Home(){
                <ul className={s.dogsGrid}> {currentDogs?.map( el =>{
              
               return (
-              <div className={s.margin}> <NavLink className={s.navlink} to={`/home/${el.id}`} > <DogCard  img={el.img ? el.img : "https://www.anipedia.net/imagenes/nombres-de-perros-800x375.jpg"}
+              <div className={s.margin}> <NavLink className={s.navlink} to={`/home/${el.id}`} > <DogCard  img={el.img ? el.img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwG3fSxo_LjSOhpg5QIy5VZI-2T2Jczs5olU0Vgg8dNe3b8Sm5sQspY7og3HUW8zifY7A&usqp=CAU"}
                 name={el.name} temperaments={!el.createInDb ? el.temperament : el.Temperaments.map(e=>e.name + " ") }key={el.id} />
                    </NavLink></div>  )
                 })}

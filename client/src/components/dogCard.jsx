@@ -1,9 +1,8 @@
 import React from 'react';
-import s from '../styles/cards.css';
+import s from '../styles/DogCard.module.css'
 
 
 export default function DogCard({name, img, temperaments}) {
-
     return(
         <div >
             <h3 className={s.subTitle}>{name}</h3>

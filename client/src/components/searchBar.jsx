@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {useDispatch} from 'react-redux';
 import {getNameDogs} from '../actions';
-import s from '../styles/searchBar.css';
+import s from '../styles/SearchBar.module.css';
 
 
 export default function SearchBar(){
@@ -20,7 +20,7 @@ export default function SearchBar(){
         dispatch(getNameDogs(name));
         setName("");}
         else{
-        alert("buscar perrito")
+        alert("Ingresa un nombre para buscar")
         }
     }
 

@@ -1,9 +1,9 @@
 import './App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import LandingPage from './components/landingPage';
-//import Home from './components/Home';
-import DogCreate from './components/dogCreate';
-//import DogDetail from './components/DogDetail';
+import LandingPage from './components/LandingPage';
+import Home from './components/Home';
+import DogCreate from './components/DogCreate';
+import DogDetail from './components/DogDetail';
 import { Error404 } from './components/Error404';
 
 

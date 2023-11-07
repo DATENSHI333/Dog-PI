@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {NavLink, useHistory} from 'react-router-dom';
 import { postDogs, getTemperaments } from '../actions';
 import { useDispatch, useSelector } from 'react-redux';
-import s from '../styles/dogCreate.css';
+import s from '../styles/DogCreate.module.css';
 import swal from 'sweetalert'; 
 
 
@@ -84,7 +84,6 @@ export default function DogCreate(){
 
         }));
 
-
     }
 
     function handleSelect(e){
@@ -93,7 +92,6 @@ export default function DogCreate(){
             temperament: [...input.temperament, e.target.value]
         })
     }
-
 
     function handleDelete(el){
         setInput({
@@ -110,13 +108,13 @@ export default function DogCreate(){
         && input.weight_max !== "" && input.life_time_min !== "" && input.life_time_max !== "" && input.temperament.length !== 0 )
 
         {dispatch(postDogs(input))
-        swal("Genial!", "Tu Perrito ha sido Creado con Exito!", "success")
+        swal("Genial!", "Tu Perro ha sido Creado con Exito!", "success")
         setInput({
             name: "", height_min: "", height_max: "",  weight_min: "", weight_max: "", life_time_min: "", life_time_max: "", temperaments:[], imagen:"",
         })
         history.push('/home')}
         else{
-        swal("Debe completar Todos los campos sin Errores primero, los campos con * son Obligarotios!")
+        swal("Debe completar Todos los campos sin errores, los campos con * son Obligarotios!")
          
     }
     }
@@ -130,7 +128,7 @@ export default function DogCreate(){
         <div>
             <NavLink className={s.navlink} to ="/home"
             ><button className={s.boton}>Volver</button></NavLink>
-            <h1 className={s.text}>Creá tu nuevo Perrito!</h1>
+            <h1 className={s.text}>Creá tu Perrito!!</h1>
             <form className={s.form} onSubmit={(e)=>handleSubmit(e)}>
                 <div>
                     <label for="name" htmlFor="name">Nombre *</label>

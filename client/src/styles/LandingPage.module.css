@@ -1,5 +1,5 @@
 .title{
-text-align: center;
+    text-align: center;
 text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #e69d00, 0 0 30px #e69d00,
 0 0 30px #e69d00, 0 0 40px #e69d00, 0 0 50px #e69d00;
 font-size: 3rem;}
@@ -8,11 +8,12 @@ font-size: 3rem;}
 text-decoration: none;
 text-align: center;
 text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e69d00, 0 0 10px #e69d00,
-0 0 10px  #e69d00, 0 0 20px #e69d00, 0 0 30px #e69d00;
+0 0 10px #e69d00, 0 0 20px #e69d00, 0 0 30px #e69d00;
 font-size: 2rem;}
 
 .navlink{
-text-decoration: none;
-color: black;
-width: 300px;
+    text-decoration: none;
+    color: black;
+    width: 300px;
+    cursor:url(''), auto;
 }

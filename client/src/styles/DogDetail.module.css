@@ -11,6 +11,7 @@
 }
 .margin:hover {
     transform: scale(1.02);
+    cursor:url(''), auto;
   }
   .margin::after {content: "";background: rgb(220, 220, 220, 200); opacity: 0.5; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; }
 
@@ -23,6 +24,7 @@
 }
 .title:hover {
     transform: scale(1.2);
+    cursor:url(''), auto;}
   
     .dogImage{
     display: block;
@@ -96,6 +98,5 @@ margin-block-end: unset;
   .boton:hover{
     color: #3c3d15bb;
     background-color: #f5e2a4;
- }
-
-}
+    cursor:url(), auto;}
+  

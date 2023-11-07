@@ -1,6 +1,9 @@
+
+
 .dogImage{
     border-radius: 10px;
     background-image: url("../images/fondoCARD.jpg");
+    cursor:url(''), auto; 
     width:250px; height:200px;
 }
 @media (max-width: 560px){
@@ -13,6 +16,7 @@
   .subTitle{
     text-align: center;
     font-size: 1.5rem;
+    cursor:url(''), auto;
     margin-block-start: 10px;
     margin-block-end: 10px;
     margin: 5px
@@ -22,4 +26,10 @@
     word-spacing: 0.25em;
     text-align: center;
     font-size: 0.8rem;
-    margin: 5px}
+    cursor:url(''), auto;
+    margin: 5px
+}
+
+
+
+  

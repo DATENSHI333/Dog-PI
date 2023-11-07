@@ -1,74 +1,86 @@
 import axios from 'axios';
+import swal from 'sweetalert'; 
 
-export function getDogs(){
+
+const ruta = "http://localhost:3001/";
+export function getDogs() {
     return async function(dispatch) {
-        var json = await axios.get('http://localhost:3001/dog/');
+      try {
+        var json = await axios.get(`${ruta}dogs`);
+        console.log(json)
         return dispatch({
-            type: 'GET_DOGS',
+            type: "GET_DOGS",
             payload: json.data
-        })
-    }
-
-}
-
-export function getDogName(name){ 
-    return async function(dispatch) {
-        try {
-            var json = await axios.get('http://localhost:3001/dog?name=' + name);
-            return dispatch ({
-                type: 'GET_DOG_NAME',
-                payload: json.data 
-            })
+        }) 
       } catch (error) {
-        alert('Dog not found');
+          console.log(error)
+      }  
+    }
+    
+}
 
+export function getNameDogs(name){
+    return async function(dispatch){
+        try{
+            var dogsByName = await axios.get("http://localhost:3001/dogs?name=" + name);
+            return dispatch({
+                type: "GET_NAME_DOGS",
+                payload: dogsByName.data
+            })
+        }catch(error){
+            swal("El Nombre ingresado no existe en la base de datos, prueba otro o agrega uno nuevo")
+            console.log(error)
         }
+
     }
 }
 
-export function getTemperament(){
-    return async function(dispatch) {
-        var json = await axios.get('http://localhost:3001/temperament/');
-        return dispatch({
-            type: 'GET_TEMPERAMENT',
-            payload: json.data
-        })
+export function getTemperaments(){
+    return async function (dispatch){
+        var temp = await axios.get("http://localhost:3001/temperaments", {
+        
+        });
+        console.log(temp.data)
+        return dispatch ({type: "GET_TEMPERAMENTS", payload: temp.data});
     }
 }
 
-export function postDog(payload){
-    return async function(dispatch) {
-        const data = await axios.post('http://localhost:3001/dog', payload);
-        console.log(data)
-        return data;
-    }
-}
-
-export function filterDogsByTemperament(payload){ //el payload es el value que va a llegar
-    console.log(payload)
-    return {
-        type: 'FILTER_BY_TEMPERAMENT',
-        payload
-    }
-
-}
-
-export function filterCreated(payload){// el payload es la opcion que yo elija en el form
-    return {
-        type: 'FILTER_CREATED',
-        payload
-    }
-
-}
-
-export function orderByName(payload) {
-    return {
-        type: 'ORDER_BY_NAME', //despacho con ese type
+export function filterDogsByTemperaments(payload){
+   // console.log("payload",payload)
+    return{
+        type: "FILTER_BY_TEMPERAMENTS",
         payload
     }
 }
 
-export function orderByWeight(payload) {
+//filtra los dogs entre los creados y los que estan vienen de la api
+export function filterCreated(payload) {
+    return{
+        type:"FILTER_CREATED",
+        payload
+    }
+}
+
+export function postDogs(payload) {
+   // console.log(payload)
+    return async function (dispatch){
+        const response = await axios.post("http://localhost:3001/dogs", payload);
+        console.log(response);
+        return response;
+    }
+    
+}
+
+export function orderByName(payload){
+   
+    return {
+        type: 'ORDER_BY_NAME',
+        payload
+    }
+}
+
+export function orderByWeight(payload){
+   
     return {
         type: 'ORDER_BY_WEIGHT',
         payload
@@ -76,28 +88,15 @@ export function orderByWeight(payload) {
 }
 
 export function getDetail(id){
-    
-        return async function (dispatch){
-            try {
-                if(id){
-                    const detail = await axios.get(`http://localhost:3001/dog/${id}`);
-                    dispatch ({
-                        type: 'GET_DETAIL',
-                        payload: detail.data
-                    })
-                } else {
-                    dispatch({
-                        type: 'GET_DETAIL',
-                        payload: []
-                        
+    return async function (dispatch){
+        try {
+            var json = await axios.get("http://localhost:3001/dogs/" + id);
+        return dispatch ({
+            type: 'GET_DETAILS',
+            payload: json.data
+        })
         
-                    })
-                }
-
-            } catch(error){
-                console.log(error)   
-
-            }  
-        }            
-    
-  }
+    }catch(error){
+        console.log(error)
+    }}
+}
