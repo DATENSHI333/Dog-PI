@@ -16,6 +16,9 @@
   background-color: #27282b;
   background-image: url("../images/NavBar4.jpg"),
   linear-gradient(to top, #ffffff 0%, #f7f7f7 100%);
+  border-radius: 15px;
+  box-shadow: 0 0 10px #000000, 0 0 20px #ffffff, 0 0 30px #e600c0, 0 0 10px #e600c0,
+  0 0 10px #e600c0, 0 0 10px #e600c0, 0 0 10px #e600c0;
   display: flex;
   justify-content: space-around;
   align-items: center;

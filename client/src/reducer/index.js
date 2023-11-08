@@ -34,7 +34,6 @@ function rootReducer(state = initialState, action) {
                 el.temperament &&
                 el.temperament.split(", ").find((e) => e === action.payload)
             );
-      //console.log("filtro temperamentos",allDogs)
       return {
         ...state,
         dogs: temperamentFiltered,
@@ -95,13 +94,9 @@ function rootReducer(state = initialState, action) {
                 
         let sortedArrWeight = action.payload === 'weightasc' ? 
             state.dogs.sort(function (a, b){
-              // let num1 = a.weight_metric.split(" - ");
-              // let num2 = b.weight_metric.split(" - ");
                 return b.weight_min - a.weight_min;
             }) :
             state.dogs.sort(function(a, b){
-              // let num1 = a.weight_metric.split(" - ");
-              // let num2 = b.weight_metric.split(" - ");
                 return a.weight_min - b.weight_min;
             })
             return{

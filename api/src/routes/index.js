@@ -119,7 +119,6 @@ router.get("/temperaments", async (req, res) => {
       });
       const sinEspacios = temperaments.map((e) => e && e.split(", ")).flat(); // intera en los array y devuelve un solo array con todos los elementos
       const sinRepetidos = sinEspacios.unique().sort();
-      // console.log("4", sinRepetidos.length);
       var aux = sinRepetidos
         .map((e) => {
           return {
@@ -192,17 +191,6 @@ router.get("/dogs/:id", async (req, res) => {
 }
 });
 
-//pendiente
-router.delete("/dogs/:name", async (req, res) => {
-  try{
-    const { name } = req.params;
-  const dog = await Dog.destroy({
-    where: { name: { [Op.like]: `%${name}%` } },
-  });
-  res.json(dog);
-}catch(error){
-  console.log("Se presento un error en la ruta Delete /dogs/:name", error)
-}
-});
+
 
 module.exports = router;

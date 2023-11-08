@@ -24,7 +24,6 @@ export default function Home(){
     const indexOfFirstDog = indexOfLastDog - dogsPerPage // 9-9=0 18-9=9 27-9=18 36-9=27 45-9=36...
     const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog)
 
-    // const temperaments = useSelector((state)=> state.Temperaments)
 
     const paginado = (pageNumber)=>{
         setCurrentPage(pageNumber)
@@ -73,7 +72,7 @@ export default function Home(){
                 paginado= {paginado}
                 />
             <div className={s.dogCards}>
-               <ul className={s.dogsGrid}> {currentDogs?.map( el =>{
+               <ul className={s.dogsGrid}> {Array.isArray(currentDogs) && currentDogs.map(el => {
              
               return (
               <div className={s.margin}> <NavLink className={s.navlink} to={`/home/${el.id}`} > <DogCard  img={el.img ? el.img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwG3fSxo_LjSOhpg5QIy5VZI-2T2Jczs5olU0Vgg8dNe3b8Sm5sQspY7og3HUW8zifY7A&usqp=CAU"}

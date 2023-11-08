@@ -80,7 +80,7 @@
   background: gainsboro;
   margin-top: 20px;
   border-radius: 15px;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e600c0, 0 0 10px #e600c0,
+  box-shadow: 0 0 10px #000000, 0 0 20px #ffffff, 0 0 30px #e600c0, 0 0 10px #e600c0,
   0 0 10px #e600c0, 0 0 10px #e600c0, 0 0 10px #e600c0;
   cursor:url(''), auto;
   width: 250px;

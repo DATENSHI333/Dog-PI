@@ -26,6 +26,7 @@ export default function NavBar() {
 
   const temperaments = useSelector((state) => state.temperaments);
 
+
   useEffect(() => {
     dispatch(getDogs());
     dispatch(getTemperaments());
@@ -82,7 +83,7 @@ export default function NavBar() {
                 </div>
                 <div>
                   <label className={s.label} htmlFor="select">
-                    creados filtro
+                    filtro DB API
                   </label>
                   <select
                     className={s.select}

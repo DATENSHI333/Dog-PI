@@ -20,7 +20,6 @@ describe('<LandingPage />', () => {
     expect(wrapper.find(NavLink)).toHaveLength(1);
   });
   it('El NavLink contiene una h4 y una Imagen y cambiar la ruta hacia "/home".', () => {
-    //el orden donde declaran los Links es importante
     expect(wrapper.find(NavLink).at(0).prop('to')).toEqual('/home');
   });
   it('El <h4 /> debe contener el texto "Ingresa para buscar perros o Crearlos tu mismo!"', () => {
