@@ -126,8 +126,6 @@ export default function DogCreate(){
 
     return(
         <div>
-            <NavLink className={s.navlink} to ="/home"
-            ><button className={s.boton}>Volver</button></NavLink>
             <h1 className={s.text}>Creá tu Perrito!!</h1>
             <form className={s.form} onSubmit={(e)=>handleSubmit(e)}>
                 <div>
@@ -192,6 +190,8 @@ export default function DogCreate(){
                     {input.img ? <img className={s.img} src={input.img} alt="img not found" /> : ""}
                     <button className={s.boton} type='submit'>Crear Nuevo Perrito</button>
             </form>
+            <NavLink className={s.navlink} to ="/home">
+                <button className={s.boton}>Volver</button></NavLink>
         </div>
     )
 }

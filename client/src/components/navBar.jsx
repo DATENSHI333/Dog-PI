@@ -82,7 +82,7 @@ export default function NavBar() {
                 </div>
                 <div>
                   <label className={s.label} htmlFor="select">
-                    Api VS DB
+                    creados filtro
                   </label>
                   <select
                     className={s.select}

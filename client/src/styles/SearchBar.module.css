@@ -31,11 +31,11 @@
   }
   .input:hover {
     border-color: #888;
-    cursor:url(''), auto;
+    cursor: pointer;
   }
   .input:focus {
     border-color: #aaa;
-    box-shadow: 0 0 1px 3px #aa926c;
+    box-shadow: 0 0 1px 3px #aa6ca4;
     box-shadow: 0 0 0 3px -moz-mac-focusring;
     color: #222; 
     outline: none;
@@ -55,15 +55,15 @@
     font-weight: 100;
     font-size: 12px;
     color: #ffffff;
-    background-color: burlywood;
+    background-color: rgb(149, 30, 196);
     border-radius: 6px;
-    border: 2px solid #8d7248;
+    border: 2px solid #88488d;
   }
   
   .boton:hover{
-    color: #3c3d15bb;
-    background-color: #f5e2a4;
-    cursor:url(''), auto;
+    color: #000000bb;
+    background-color: #f5a4de;
+    cursor: pointer;
     transform: scale(1.1);
   }
 

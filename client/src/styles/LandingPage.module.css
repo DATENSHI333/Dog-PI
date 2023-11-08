@@ -1,19 +1,19 @@
 .title{
     text-align: center;
-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #e69d00, 0 0 30px #e69d00,
-0 0 30px #e69d00, 0 0 40px #e69d00, 0 0 50px #e69d00;
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #e600c0, 0 0 30px #e600c0,
+0 0 30px #e600c0, 0 0 40px #e600c0, 0 0 50px #e600c0;
 font-size: 3rem;}
 
 .subTitle{
 text-decoration: none;
 text-align: center;
-text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e69d00, 0 0 10px #e69d00,
-0 0 10px #e69d00, 0 0 20px #e69d00, 0 0 30px #e69d00;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e600c0, 0 0 10px #e600c0,
+0 0 10px #e600c0, 0 0 20px #e600c0, 0 0 30px #e600c0;
 font-size: 2rem;}
 
 .navlink{
     text-decoration: none;
     color: black;
     width: 300px;
-    cursor:url(''), auto;
+    cursor: pointer;
 }

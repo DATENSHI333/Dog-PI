@@ -43,7 +43,7 @@
       background-repeat: no-repeat, repeat;
       background-position: right .7em top 50%, 0 0;
       background-size: .65em auto, 100%;
-      cursor:url(''), auto;
+      cursor: auto;
     }
     .select::-ms-expand {
       display: none;
@@ -53,7 +53,7 @@
     }
     .select:focus {
       border-color: #aaa;
-      box-shadow: 0 0 1px 3px #aa926c;
+      box-shadow: 0 0 1px 3px #aa6ca4;
       box-shadow: 0 0 0 3px -moz-mac-focusring;
       color: #222; 
       outline: none;
@@ -80,12 +80,12 @@
   background: gainsboro;
   margin-top: 20px;
   border-radius: 15px;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e69d00, 0 0 10px #e69d00,
-  0 0 10px #e69d00, 0 0 10px #e69d00, 0 0 10px #e69d00;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e600c0, 0 0 10px #e600c0,
+  0 0 10px #e600c0, 0 0 10px #e600c0, 0 0 10px #e600c0;
   cursor:url(''), auto;
   width: 250px;
 }
 .margin:hover {
   transform: scale(1.1);
-  cursor:url(''), auto;
+  cursor: auto;
 }

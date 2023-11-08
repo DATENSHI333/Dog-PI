@@ -14,16 +14,16 @@
 
 .title{
     text-align: center;
-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #e69d00, 0 0 30px #e69d00,
-0 0 30px #e69d00, 0 0 40px #e69d00, 0 0 50px #e69d00;
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #e600c0, 0 0 30px #e600c0,
+0 0 30px #e600c0, 0 0 40px #e600c0, 0 0 50px #e600c0;
 font-size: 3rem;}
 
 .subTitle{
 font-weight: bold;
 text-decoration: none;
 text-align: center;
-text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e69d00, 0 0 10px #e69d00,
-0 0 10px #e69d00, 0 0 20px #e69d00, 0 0 30px #e69d00;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e600c0, 0 0 10px #e600c0,
+0 0 10px #e600c0, 0 0 20px #e600c0, 0 0 30px #e600c0;
 font-size: 2rem;}
 
 .navlink{
@@ -41,11 +41,12 @@ font-size: 2rem;}
     font-weight: 800;
     font-size: 20px;
     color: #ffffff;
-    background-color: burlywood;
+    background-color: rgb(149, 30, 196);
     border-radius: 6px;
-    border: 2px solid #8d7248;
+    border: 2px solid #88488d;
   }
   
   .boton:hover{
-    color: #3c3d15bb;
-    background-color: #f5e2a4;}
+    color: #000000bb;
+    background-color: #f5a4de;}
+

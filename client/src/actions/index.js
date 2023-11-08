@@ -46,14 +46,13 @@ export function getTemperaments(){
 }
 
 export function filterDogsByTemperaments(payload){
-   // console.log("payload",payload)
     return{
         type: "FILTER_BY_TEMPERAMENTS",
         payload
     }
 }
 
-//filtra los dogs entre los creados y los que estan vienen de la api
+
 export function filterCreated(payload) {
     return{
         type:"FILTER_CREATED",
@@ -62,7 +61,6 @@ export function filterCreated(payload) {
 }
 
 export function postDogs(payload) {
-   // console.log(payload)
     return async function (dispatch){
         const response = await axios.post("http://localhost:3001/dogs", payload);
         console.log(response);
@@ -72,7 +70,6 @@ export function postDogs(payload) {
 }
 
 export function orderByName(payload){
-   
     return {
         type: 'ORDER_BY_NAME',
         payload
@@ -80,7 +77,6 @@ export function orderByName(payload){
 }
 
 export function orderByWeight(payload){
-   
     return {
         type: 'ORDER_BY_WEIGHT',
         payload

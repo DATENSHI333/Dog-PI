@@ -2,7 +2,7 @@
 
 .dogImage{
     border-radius: 10px;
-    background-image: url("../images/fondoCARD.jpg");
+    background-image: url("../images/fondoCARD2.jpg");
     cursor:url(''), auto; 
     width:250px; height:200px;
 }

@@ -8,12 +8,6 @@ export const Error404 = () => {
         <div>
             <h3 className={s.title} >Error 404</h3>
             <p className={s.subTitle}>Pagina no Encontrada</p>
-            <div >
-            
-          </div>
-
-
-       
             <Link to= '/home'><button className={s.boton} >Home</button></Link>
         </div>
     )

@@ -1,34 +1,45 @@
 .margin{
-    height: 530px;
+    height: 600px;
     display: block;
     margin:auto;
     width: 800px;
     margin-top: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e69d00, 0 0 10px #e69d00,
-    0 0 10px #e69d00, 0 0 10px #e69d00, 0 0 10px #e69d00;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e600c0, 0 0 10px #e600c0,
+    0 0 10px #e600c0, 0 0 10px #e600c0, 0 0 10px #e600c0;
+    background-color: rgb(186, 88, 201);
    
 }
 .margin:hover {
     transform: scale(1.02);
-    cursor:url(''), auto;
+    cursor: default;
   }
-  .margin::after {content: "";background: rgb(220, 220, 220, 200); opacity: 0.5; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; }
+  .margin::before {
+    content: "";
+    background: transparent; 
+    opacity: 0.5; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0; 
+    position: absolute; 
+    z-index: -1;
+   }
 
 .title{
     font-style: italic;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e69d00, 0 0 10px #e69d00,
-    0 0 10px #e69d00, 0 0 10px #e69d00, 0 0 10px #e69d00;;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e600c0, 0 0 10px #e600c0,
+    0 0 10px #e600c0, 0 0 10px #e600c0, 0 0 10px #e600c0;;
     margin-bottom: 0;
     padding: 20px;
 }
 .title:hover {
     transform: scale(1.2);
-    cursor:url(''), auto;}
+    cursor:default;}
   
     .dogImage{
     display: block;
-text-align: right;
+    text-align: right;
     opacity: 100%;
     border-radius: 20px;
     width: 400px;
@@ -45,28 +56,28 @@ text-align: right;
   }
 .contenedor{
   display: flex;
-    justify-content: center;
-    align-items: center;}
+  justify-content: center;
+  align-items: center;}
 
  .tamaño{ 
-     display: flex;
+  display: flex;
   flex-flow: row;
   align-items: center;
-justify-content: center;
+  justify-content: center;
 }
 
 .peso{ 
-    display: flex;
- flex-flow: row;
- align-items: center;
-justify-content: center;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .vida{ 
-    display: flex;
- flex-flow: row;
- align-items: center;
-justify-content: center;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .p{
@@ -79,7 +90,7 @@ margin-block-end: unset;
     display: flex;
     flex-flow: column;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
 }
 
 .boton{
@@ -90,13 +101,13 @@ margin-block-end: unset;
     font-weight: 800;
     font-size: 20px;
     color: #ffffff;
-    background-color: burlywood;
-    border-radius: 6px;
-    border: 2px solid #8d7248;
+    background-color: rgb(149, 30, 196);
+    border-radius: 20px;
+    border: 2px solid #ff00f7;
   }
   
   .boton:hover{
-    color: #3c3d15bb;
-    background-color: #f5e2a4;
-    cursor:url(), auto;}
+    color: #000000bb;
+    background-color: #f5a4de;
+    cursor: default;}
   

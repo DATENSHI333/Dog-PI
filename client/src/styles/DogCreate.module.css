@@ -25,9 +25,7 @@
   grid-template-rows: repeat(auto-fill, 50px);
   padding: 10px;
   justify-content: center;
-  background-color:white;
-  /* text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #e60073, 0 0 5px #e60073,
-  0 0 5px #e60073, 0 0 10px #e60073, 0 0 20px #e60073; */
+  background-color:rgb(174, 118, 179);
   font-size: 1rem;
   font-style: italic;
   font-weight: bold;
@@ -36,8 +34,8 @@
   width: 400px;
   margin: auto;
   border-radius: 15px;  
-  box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #e69d00, 0 0 5px #e69d00,
-  0 0 5px #e69d00, 0 0 5px #e69d00, 0 0 5px #e69d00;
+  box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #e600c0, 0 0 5px #e600c0,
+  0 0 5px #e600c0, 0 0 5px #e600c0, 0 0 5px #e600c0;
   
 }
 .lista{
@@ -47,8 +45,8 @@
 
 .text{
   text-align: center;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e69d00, 0 0 10px #e69d00,
-  0 0 10px #e69d00, 0 0 20px #e69d00, 0 0 30px #e69d00;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e600c0, 0 0 10px #e600c0,
+  0 0 10px #e600c0, 0 0 20px #e600c0, 0 0 30px #e600c0;
   font-weight: bold;}
 
 .input{
@@ -59,23 +57,23 @@ margin: 10px;
 
 .boton{
   margin: auto;
-  margin-top: 10px;
+  margin-top: 30px;
   display: block;
-  width: 300px;
+  width: 200px;
   text-decoration: none;
   padding: 5px;
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
-  background-color: burlywood;
+  background-color: rgb(149, 30, 196);
   border-radius: 6px;
-  border: 2px solid #8d7248;
-  cursor:url(''), auto;
+  border: 2px solid #88488d;
+  cursor: pointer;
 }
 
 .boton:hover{
-  color: #3c3d15bb;
-  background-color: #f5e2a4;}
+  color: #000000bb;
+  background-color: #f5a4de;}
 
   .botonTemp{
     margin: 3px;
@@ -84,15 +82,15 @@ margin: 10px;
     font-weight: 500;
     font-size: 13px;
     color: #ffffff;
-    background-color: burlywood;
+    background-color: rgb(149, 30, 196);
     border-radius: 6px;
-    border: 2px solid #8d7248;
-    cursor:url(''), auto;
+    border: 2px solid #88488d;
+    cursor: pointer;
   }
   
   .botonTemp:hover{
-    color: #3c3d15bb;
-    background-color: #f5e2a4;}
+    color: #000000bb;
+    background-color: #f5a4de;}
 
     .select {
       display: block;
@@ -128,7 +126,7 @@ margin: 10px;
     }
     .select:focus {
       border-color: #aaa;
-      box-shadow: 0 0 1px 3px #aa926c;
+      box-shadow: 0 0 1px 3px rgb(195, 0, 255);
       box-shadow: 0 0 0 3px -moz-mac-focusring;
       color: #222; 
       outline: none;
@@ -155,8 +153,8 @@ margin: 10px;
 .img{
   width: 150px;
   height: 150px;
-  box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #e69d00, 0 0 10px #e69d00,
-  0 0 5px #e69d00, 0 0 5px #e69d00, 0 0 5px #e69d00;
+  box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #e600c0, 0 0 10px #e600c0,
+  0 0 5px #e600c0, 0 0 5px #e600c0, 0 0 5px #e600c0;
   display: block;
   margin: auto;
   margin-top: 10px;
