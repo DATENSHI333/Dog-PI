@@ -11,7 +11,7 @@ export function App() {
   return (
     <BrowserRouter>
     <div className="App">
-    
+
     <Switch>
     <Route exact path='/' component = {LandingPage}/>
     <Route exact path='/home' component = {Home}/>

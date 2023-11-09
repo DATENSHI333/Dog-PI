@@ -30,7 +30,7 @@ font-size: 2rem;}
     text-decoration: none;
     color: black;
     width: 300px;
-    cursor:url(''), auto;
+    cursor:auto;
 }
 
 .boton{
