@@ -119,8 +119,7 @@ router.get("/temperaments", async (req, res) => {
       });
       const sinEspacios = temperaments.map((e) => e && e.split(", ")).flat(); // intera en los array y devuelve un solo array con todos los elementos
       const sinRepetidos = sinEspacios.unique().sort();
-      var aux = sinRepetidos
-        .map((e) => {
+      var aux = sinRepetidos.map((e) => {
           return {
             name: e,
           };
