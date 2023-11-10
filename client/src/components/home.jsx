@@ -1,11 +1,7 @@
 import React from "react";
-//importo los hook que voy a usar de react
 import { useState, useEffect } from "react";
-//importo los hooks de react-redux (previamente se instala npm i react-redux)
 import { useDispatch, useSelector } from "react-redux";
-//importo las actions que me interesa usar en este componente
 import { getDogs, orderByName, orderByWeight, getTemperaments} from "../actions";
-//importo los componentes que voy a usar
 import DogCard from "./DogCard";
 import Paginado from "./Paginado";
 import s from "../styles/Home.module.css"

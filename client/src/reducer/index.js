@@ -7,7 +7,7 @@ const initialState = {
 
 
 
-//console.log("estado inicial", initialState.dogs);
+
 function rootReducer(state = initialState, action) {
   switch (action.type) {
     case "GET_DOGS":

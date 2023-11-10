@@ -21,7 +21,7 @@
 }
 
 .number:hover{
-  transform: scale(1.5);
+  transform: scale(1.7);
 }
 
 .img {
@@ -50,4 +50,9 @@ opacity: 0.9;
 .nav {
   width: 70%;
   margin: auto;
+}
+
+.currentPage {
+  color: rgb(255, 204, 0);
+  font-size: 30px;
 }

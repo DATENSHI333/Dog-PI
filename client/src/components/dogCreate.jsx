@@ -3,7 +3,7 @@ import {NavLink, useHistory} from 'react-router-dom';
 import { postDogs, getTemperaments } from '../actions';
 import { useDispatch, useSelector } from 'react-redux';
 import s from '../styles/DogCreate.module.css';
-import swal from 'sweetalert'; 
+
 
 
 
@@ -87,10 +87,12 @@ export default function DogCreate(){
     }
 
     function handleSelect(e){
-        setInput({
-            ...input,
-            temperament: [...input.temperament, e.target.value]
-        })
+        if (!input.temperament.includes(e.target.value)) {
+            setInput({
+                ...input,
+                temperament: [...input.temperament, e.target.value]
+            })
+        }
     }
 
     function handleDelete(el){
@@ -108,14 +110,13 @@ export default function DogCreate(){
         && input.weight_max !== "" && input.life_time_min !== "" && input.life_time_max !== "" && input.temperament.length !== 0 )
 
         {dispatch(postDogs(input))
-        swal("Genial!", "Tu Perro ha sido Creado con Exito!", "success")
+        alert("Genial! Tu Perro ha sido Creado con Exito!")
         setInput({
             name: "", height_min: "", height_max: "",  weight_min: "", weight_max: "", life_time_min: "", life_time_max: "", temperaments:[], imagen:"",
         })
         history.push('/home')}
         else{
-        swal("Debe completar Todos los campos sin errores, los campos con * son Obligarotios!")
-         
+        alert("Debe completar Todos los campos sin errores, los campos con * son Obligarotios!")
     }
     }
 

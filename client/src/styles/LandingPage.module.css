@@ -11,6 +11,10 @@ text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #e600c0, 0 0 10px #e600c0,
 0 0 10px #e600c0, 0 0 20px #e600c0, 0 0 30px #e600c0;
 font-size: 2rem;}
 
+.subTitle:hover {
+    transform: scale(1.2);
+    cursor: pointer;}
+
 .navlink{
     text-decoration: none;
     color: black;
