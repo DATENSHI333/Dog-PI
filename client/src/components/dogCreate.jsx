@@ -106,8 +106,15 @@ export default function DogCreate(){
     function handleSubmit(e){
         e.preventDefault()
         console.log(input)
-        if( Object.keys(errors).length === 0 && input.name !== "" && input.height_min !== "" && input.height_max !== "" && input.weight_min !== ""
-        && input.weight_max !== "" && input.life_time_min !== "" && input.life_time_max !== "" && input.temperament.length !== 0 )
+        if( Object.keys(errors).length > 0 && 
+        input.name !== "" && 
+        input.height_min !== "" && 
+        input.height_max !== "" && 
+        input.weight_min !== "" && 
+        input.weight_max !== "" && 
+        input.life_time_min !== "" && 
+        input.life_time_max !== "" && 
+        input.temperament.length !== 0 )
 
         {dispatch(postDogs(input))
         alert("Genial! Tu Perro ha sido Creado con Exito!")
