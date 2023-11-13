@@ -1,5 +1,5 @@
 import axios from 'axios';
-import swal from 'sweetalert'; 
+
 
 
 const ruta = "http://localhost:3001/";
@@ -28,7 +28,7 @@ export function getNameDogs(name){
                 payload: dogsByName.data
             })
         }catch(error){
-            swal("El Nombre ingresado no existe en la base de datos, prueba otro o agrega uno nuevo")
+            alert("No se encontro ningun perrito con ese nombre")
             console.log(error)
         }
 
